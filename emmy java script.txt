@@ -1,0 +1,39 @@
+            adminPanel.style.display = "flex";
+        });
+
+        // Close when clicking outside the admin box
+        adminPanel.addEventListener("click", function (e) {
+            if (e.target === adminPanel) {
+                adminPanel.style.display = "none";
+            }
+        });
+
+        // Close with Escape key
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                adminPanel.style.display = "none";
+            }
+        });
+    }
+
+    // Update copyright year
+    const year = document.querySelector("#year");
+
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+
+    // Contact form
+    const contactForm = document.querySelector("#contactForm");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            alert("Thank you for contacting Chukwuemeka Ezeani!");
+
+            contactForm.reset();
+        });
+    }
+
+    console.log("Chukwuemeka Ezeani Portfolio Loaded Successfully!");

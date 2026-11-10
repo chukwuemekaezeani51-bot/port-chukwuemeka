@@ -600,3 +600,27 @@ img {
     content: none !important;
 }
 
+
+/* MAIN PICTURE ABOVE INTRODUCTION */
+.top-main-picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 40px;
+}
+
+.top-main-picture img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.hero {
+    grid-template-columns: 1fr;
+    padding-top: 25px;
+}

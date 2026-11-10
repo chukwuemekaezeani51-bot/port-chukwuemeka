@@ -42,3 +42,26 @@
     object-fit: contain;
     object-position: center center;
 }
+
+/* FIX PORTRAIT PHOTO - SHOW THE COMPLETE IMAGE */
+
+.photo {
+    height: auto !important;
+    min-height: 0;
+    overflow: visible !important;
+}
+
+.photo img,
+img.photo,
+.photo-image,
+.profile-photo,
+.profile-photo img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    max-width: 100%;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 auto;
+}
